@@ -1,6 +1,7 @@
 package Filer_Exceptions.forberedelse;
 
 import java.io.*;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -20,10 +21,10 @@ public class DataHandler {
     try {
 
       //Can't control flush aka overrides file
-      //PrintStream printStream = new PrintStream(file);
+      PrintStream printStream = new PrintStream(file);
 
       //Can control flush aka can decide to override file
-      PrintStream printStream = new PrintStream(new FileOutputStream(file, !overrideFile));
+      //PrintStream printStream = new PrintStream(new FileOutputStream(file, !overrideFile));
 
       printStream.print(animal.getName());
       printStream.print(";");
@@ -36,7 +37,7 @@ public class DataHandler {
 
       printStream.close();
     } catch (FileNotFoundException e) {
-      e.printStackTrace();
+      System.out.println(e.getMessage());
     }
   }
 
@@ -52,7 +53,7 @@ public class DataHandler {
       fileWriter.close();
 
     } catch (IOException e) {
-      e.printStackTrace();
+      System.out.println(e.getMessage());
     }
 
   }

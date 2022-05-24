@@ -13,9 +13,9 @@ public class Main {
     Animal animal1 = new Animal("Mette", "Dog", 12);
     Animal animal2 = new Animal("Hans", "Cat", 2);
     Animal animal3 = new Animal("Peter", "Duck", 4);
-    /*dataHandler.addAnimal(animal1);
+    dataHandler.addAnimal(animal1);
     dataHandler.addAnimal(animal2);
-    dataHandler.addAnimal(animal3);*/
+    dataHandler.addAnimal(animal3);
 
     //------------ Write an animal to file ------------
 
@@ -32,7 +32,7 @@ public class Main {
     //dataHandler.writeAllAnimalsToFileWith_PrintStream(true);
 
     //FileWriter
-    //dataHandler.writeAnimalToFileWith_FileWriter(animal1, true);
+    dataHandler.writeAllAnimalToFileWith_FileWriter(true);
 
 
     //------------ Load from file ------------

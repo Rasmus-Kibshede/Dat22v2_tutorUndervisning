@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("-----------------------------");
 
-        superComperator.setSortOn("model");
+        superComperator.setSortOn("age");
         //superComperator.setSortDirection("TOGGLE");
         //superComperator.setSortDirection("ASC");
         //superComperator.setSortDirection("DESC");
